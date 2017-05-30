@@ -201,9 +201,6 @@ sub daysToKeep() {
 sub deleteBetweenExceptYoungestAndOldest($$) {
    my $from = shift;
    my $to = shift;
-   my $fromString = localtime($from);
-   my $toString = localtime($to);
-   print "from: $fromString, to: $toString\n";
    my $toKeepOldestIndex = 0;
    while ($toKeepOldestIndex < $#files && getFileDate($files[$toKeepOldestIndex]) < $from - $secondsPerHalfDay) {
       $toKeepOldestIndex++;

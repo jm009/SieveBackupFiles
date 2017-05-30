@@ -49,7 +49,7 @@ sub usage($) {
    print "formatted names.\n\n";
    print "Usage example: SieveBackupFiles /var/backups/myfiles \\\n";
    print " \"home_(?<year>\\\\d\\\\d\\\\d\\\\d)-(?<month>\\\\d\\\\d)-(?<day>\\\\d\\\\d)_\\\\d\\\\d-\\\\d\\\\d-\\\\d\\\\d\" \\\n";
-   print " -keepOnlylastOfDayAfter 10\n\n";
+   print " -keepOnlyLastOfDayAfter 10\n\n";
    print "Don't forget to double escape \\ and . (backslashes and dots)\n";
    print "if you call this program from the command line).\n";
    print "Probably it is a good idea to put the pattern in \" (double quotes)\n";
